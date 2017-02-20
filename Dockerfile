@@ -30,7 +30,7 @@ RUN pip install contextlib2 \
 RUN mkdir /src
 VOLUME /src
 COPY /files/apps.py /src/
-RUN chmod +x apps.py
+RUN chmod +x /src/apps.py
 WORKDIR /src/
 
 ENTRYPOINT ["python"]
